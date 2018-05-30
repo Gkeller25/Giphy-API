@@ -152,7 +152,7 @@ function addButton(){
  
 
     $(document).on("click", ".gif", function() {    
-        var animateImage=  $(this).attr("src");     
+        var animateImage =  $(this).attr("src");     
         var state = $(this).attr("data-state");
 
         if(state === "still") {
@@ -227,7 +227,8 @@ function addButton(){
         }).text("Favorite");
         favDownload.attr({
             href: favImageSource,
-            "download": "image.gif"}).text("Download");
+            "download": "image.gif"
+        }).text("Download");
         cardFoot.prepend(favDownload);
         cardFoot.prepend(unfavorite);
         cardRating.text("Rating: " + favRating);
