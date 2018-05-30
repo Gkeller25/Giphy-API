@@ -1,0 +1,14 @@
+body{background-image: url("../images/609738.png");
+    font-family:"STARWARS";}
+
+@font-face {font-family:"STARWARS";src:url("../images/STARWARS.ttf") format("truetype");font-weight:normal;font-style:normal;}
+
+#collapseFav{
+    background:   rgba(248, 249, 250, 0.60);
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+}    
+#buttonFav, #buttonMore{
+background:   rgba(0, 123, 255, 0.60);
+}
