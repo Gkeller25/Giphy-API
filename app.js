@@ -191,9 +191,11 @@ function addButton(){
             renderFavorite(favID);
         } else {
             personResults.splice(personResults.indexOf(favID, 0),1);
-            localStorage.removeItem(favID);
-            $("." + favID).remove();
             renderFavorite(favID);
+            localStorage.removeItem(favID);
+            
+            
+            $("." + favID).remove();
         }
     })
    
