@@ -133,12 +133,14 @@ function addButton(){
             $("#gallery").append(charDiv);    
         }
     }
-
+    
 
     $(document).on("click", "#buttonMore", function() {
+        var offsetCounter = Math.floor(Math.random() * 1001) + 1;
+        console.log(offsetCounter);
         var person = $(this).data("value");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        person + "&api_key=yDQ5zIEWEoqMVh1HIEOnKIg9kIRhxKYn" + "&limit=10";   
+        person + "&api_key=yDQ5zIEWEoqMVh1HIEOnKIg9kIRhxKYn" + "&limit=10&offset="+ offsetCounter +"&rating=G&lang=en";   
     
         $.ajax({
             url: queryURL,
